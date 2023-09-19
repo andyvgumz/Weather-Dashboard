@@ -36,7 +36,7 @@ function appendSearchHistory(search) {
 }
 
 function renderCurrentWeather(city, weatherData) {
-   let date = moment().format("D/M/YYYY");
+   let date = dayjs().format("D/M/YYYY");
    let tempC = weatherData["main"] ["temp"];
    let windKph = weatherData["wind"] ["speed"];
    let humidity = weatherData["main"]["humidity"];
@@ -125,7 +125,7 @@ function renderForecast(weatherData){
         windEl.attr("class", "card-text")
         humidityEl.attr("class", "card-text");
 
-        cardTitle.text(moment(futureForecast[i].format("D/M/YYYY")));
+        $("cardTitle").text(dayjs(futureForecast[i].format("D/M/YYYY")));
         weatherIcon.attr("src", iconURL);
         weatherIcon.attr("alt", iconDescription);
         tempEl.text(`Temp ${tempC} C`)
@@ -214,9 +214,9 @@ searchHistoryContainer.on("click", clickSearchHistory)
 
 
 
-// ** START PSEUDO CODE (subject to change) 
+// ** START PSEUDO CODE 
 
-// when user searches for a city (clicks search button):
+// when user searches for a city, clicks search button:
 //  - store the user input in a variable
 //  - use a fetch api to get the current & future conditions for that city
 //  - store that city into local storage

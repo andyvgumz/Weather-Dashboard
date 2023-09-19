@@ -1,9 +1,9 @@
 /* add default's to weppage */
 * {
     margin: 0;
-    padding: 0;
+    padding: 5;
     box-sizing: border-box;
-    font-size: 62.5%;
+    font-size: 80%;
 }
 
 /* used to help determine layout */
@@ -49,7 +49,7 @@ body { min-height: 100vh; }
 header {
     text-align: center;
     padding-top: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 1px;
     background-color: rgb(75,105,177);
     background-image: linear-gradient(90deg, rgba(75,105,177,1) 13%, rgba(35,77,167,1) 42%, rgba(1,1,105,1) 80%);
 }
@@ -58,7 +58,7 @@ header {
 /* style the heading */
 #form-heading {
     color:white;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -90,7 +90,7 @@ header {
 }
 
 /* style the search button */
-#search-button {
+#search-btn {
     margin-bottom: 2rem;
     background-color: #6699ff;
     color: white;
