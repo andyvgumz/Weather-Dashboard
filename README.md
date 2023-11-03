@@ -45,3 +45,8 @@ The following image shows the web application's appearance and functionality:
 ![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for London.](../Weather-Dashboard/assets/images/10-server-side-apis-challenge-demo.png)
 
 ![screenshot](../Weather-Dashboard/assets/images/weather-dashboard-screenshot.png)
+
+<img width="955" alt="image" src="https://github.com/andyvgumz/Weather-Dashboard/assets/140537925/101f8253-57f3-41e5-98e3-7b9ed4a69aae">
+
+
+
